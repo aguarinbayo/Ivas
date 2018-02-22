@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ivas;
-import ivas.interfaz.oeraciones;
+import ivas.operaciones;
 import javax.ejb.Stateless;
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -19,7 +19,7 @@ import javax.jws.WebService;
 public class iva implements operaciones {
     @Override
     public double calcularIva(@WebParam(name = "calculo") double num){
-        return num*0.19;
+        return num*1.19;
     }
-    
+
 }
